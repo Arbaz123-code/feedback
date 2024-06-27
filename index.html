@@ -67,7 +67,7 @@
 <body>
     <div class="container">
         <h2>Customer Feedback</h2>
-        <form id="feedback-form">
+        <form id="feedback-form" action="https://formspree.io/f/xrbzzdjj" method="POST">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -102,10 +102,10 @@
     <script>
         document.getElementById('feedback-form').addEventListener('submit', function(event) {
             event.preventDefault();
-            
+
             // Display thank you message
             document.getElementById('thank-you-message').style.display = 'block';
-            
+
             // Hide the form
             document.getElementById('feedback-form').style.display = 'none';
         });
